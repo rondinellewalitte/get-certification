@@ -18,10 +18,10 @@ const config = {
     bodyFormData.append('curso_id', curso_id);
     bodyFormData.append('aluno_id', id);
     bodyFormData.append('media_final', '10');
-    bodyFormData.append('iniciado', '2022-01-01+14:30:05');
+    bodyFormData.append('iniciado', '2022-11-11+14:30:05');
     bodyFormData.append('concluido', '2022-02-10+14:30:05');
 
-    const { data } = await axios.post('https://drraulaboa.com.br/certificate/registerCertificate/adm/', bodyFormData, config);
+    const { data } = await axios.post('https://saeecopuff.com.br/certificate/registerCertificate/adm/', bodyFormData, config);
     console.log(data.alert);
 
     validAjax("Cadastro", data, true);
